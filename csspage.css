@@ -1,0 +1,311 @@
+section{
+    background-color: #aeaeae;
+}
+.navi{
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+}
+.navi>ul{
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+.navi>ul>li>a{
+    font-size: 25px;
+    padding: 7px;
+    color: #ffffff;
+    text-decoration: none;   
+}
+.navi li:hover a{
+    color: #8d8989;
+}
+.home-title1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 80px;
+    color: #aeaeae;
+    z-index: 9999;
+    font-family: 'Noto Serif KR', serif;
+}
+.home-title2{
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    font-size: 30px;
+    color: #aeaeae;
+    z-index: 9999;
+    font-family: 'Noto Serif KR', serif;
+}
+.home>.material-symbols-rounded>a{
+    font-family: "Material Symbols Rounded";
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    color: rgba(255, 255, 255, 0.6);
+
+    animation-name : moveUpDown;
+    animation-duration: 2s;
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveUpDown  {
+    0% {
+        transform: translateY(-200%);
+    }
+    50% {
+        transform: translateY(-160%);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
+.about-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-title>span{
+    font-size: 100px;
+    opacity: 0.25;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+}
+.about-title>h2{
+    font-size: 80px;
+    position: absolute;
+    margin-top: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about-main{
+    height: 900px;
+    overflow: hidden;
+}
+.about-selfPhoto{
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 20%;
+    position: absolute;
+}
+.about-name{
+    position: absolute;
+    margin-top: 160px;
+    margin-right: 440px;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about-info{ 
+    position: absolute;
+    margin-top: 300px;
+    margin-right: 250px;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about-text{ 
+    position: absolute;
+    margin-top: 500px;
+    margin-right: 300px;
+    font-size: 65px;
+    color: #f504c1be;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about-name,
+.about-info,
+.about-text{
+    transition: transform 0.5s ease-in-out;
+}
+.travel{
+    background-color: white;
+    height: 1350px;
+}
+.travel-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.travel-title>span{
+    font-size: 100px;
+    opacity: 0.25;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+}
+.travel-title>h2{
+    font-size: 80px;
+    position: absolute;
+    margin-top: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.travel-text{
+    margin-top: 150px;
+    margin-left: 700px;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0px -90px 0px rgba(0, 0, 0, 0.3);
+}
+.travel-list {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.travel-list img {
+    transition: .3s
+}
+.travel-list img:hover {
+    transform: scale(1.2, 1.2)
+}
+
+.travel-thumbnail1:hover .travel-destination {
+    visibility: visible;
+}
+.travel-thumbnail2:hover .travel-destination {
+    visibility: visible;
+}
+.travel-thumbnail3:hover .travel-destination {
+    visibility: visible;
+}
+.travel-thumbnail4:hover .travel-destination {
+    visibility: visible;
+}
+.travel-thumbnail5:hover .travel-destination {
+    visibility: visible;
+}
+.travel-thumbnail6:hover .travel-destination {
+    visibility: visible;
+}
+
+.travel-destination {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(87, 85, 85, 0.589);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: visibility 0.3s ease;
+}
+
+.travel-thumbnail1 {
+    width: 550px;
+    height: 380px;
+    left: 300px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 80px 0 0 0 ;
+}
+.travel-thumbnail2 {
+    width: 300px;
+    height: 280px;
+    left: 860px;
+    position: absolute;
+    overflow: hidden;
+}
+.travel-thumbnail3 {
+    width: 400px;
+    height: 415px;
+    left: 1170px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0 80px 0 0 ;
+}
+.travel-thumbnail4 {
+    width: 550px;
+    height: 300px;
+    left: 300px;
+    top: 3035px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0 0 0 80px ;
+}
+.travel-thumbnail5 {
+    width: 300px;
+    height: 400px;
+    left: 860px;
+    top: 2935px;
+    position: absolute;
+    overflow: hidden;
+}
+.travel-thumbnail6 {
+    width: 400px;
+    height: 265px;
+    left: 1170px;
+    top: 3070px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0 0 80px 0 ;
+}
+.travel-thumbnail1 > img {
+    object-fit: cover;
+    max-height: initial;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.travel-thumbnail2 > img {
+    object-fit: cover;
+    max-height: initial;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.travel-thumbnail3 > img {
+    object-fit: cover;
+    max-height: initial;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.travel-thumbnail4 > img {
+    object-fit: cover;
+    max-height: initial;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.travel-thumbnail5 > img {
+    max-height: initial;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.travel-thumbnail6 > img {
+    max-height: initial;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.roadmap{
+    background-color: #aeaeae;
+    height:1100px;
+}
+.roadmap-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.roadmap-title>span{
+    font-size: 100px;
+    opacity: 0.25;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+}
+.roadmap-title>h2{
+    font-size: 80px;
+    position: absolute;
+    margin-top: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
